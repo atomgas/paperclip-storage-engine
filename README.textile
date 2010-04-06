@@ -1,0 +1,24 @@
+h1. Paperclip Storage Engine        
+
+h2. Install                                                    
+
+* change shared_secret in settings.yaml to something seccure (eg: openssl rand 128 -base64)
+* deploy on google  
+                 
+h2. Api
+
+* get /:attachment_id/[:filename] filename is not required but allows nicer urls
+
+
+* post (create or update attachment based on attachment_id)
+** attachment_id (must be unique)
+** content_type
+** data (file field)
+
+* delete
+** attachment_id
+
+h2. Authorization
+
+uses header *Authorization* for hmac(sha256) shared_secred based authorization 
+                                                                                 

@@ -1,4 +1,6 @@
-h1. Paperclip Storage Engine        
+h1. Paperclip Storage Engine    
+
+Google Appengine storage support for paperclip    
 
 h2. Install                                                    
 
